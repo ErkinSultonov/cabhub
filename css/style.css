@@ -1,0 +1,536 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    height: 739px;
+    width: 100%;
+    background: url('../images/h-bg_01.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+.logo h2{
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 35px;
+    margin-left: 1px;
+}
+.logo h2 span{
+    color: #daa505;
+}
+.logo p{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: -15px;
+}
+.links{
+    width: 96px;
+    height: 34px;
+    background: #ffffff00;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 5px;
+    transition: 0.4s;
+}
+.link{
+    width: 100%;
+    height: 100%;
+}
+.links:hover{
+    background: #ffc61a;
+}
+.links:hover a{
+    color: #000;
+}
+.links a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links:last-child{
+    margin-right: 0;
+}
+header h1{
+    font-weight: 900;
+    color: #fff;
+    font-size: 70px;
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+header h5{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+.book{
+    height: 760px;
+    background: #ffc61a;
+    width: 100%;
+    position: relative;
+    
+
+}
+.book h4{
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 210px;
+
+}
+.book h3{
+    font-size: 41px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.book p{
+    font-size: 14.55px;
+    font-weight: 400;
+}
+.book button,
+.book .book-btn{
+    height: 48px;
+    width: 166px;
+    background: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: bebas-neue, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 5px;
+    transition: 0.4s;
+    margin-top: 60px;
+}
+.book button:hover{
+    background: #fff;
+    color: #000;
+}
+.book img{
+    position: absolute;
+    top: -365px;
+    z-index: 33;
+    left: 175px;
+}
+.book .booking{
+    width: 100%;
+    height: 472px;
+    background: #fff;
+    margin-top: 210px;
+    -webkit-box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
+}
+.tarifs{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    padding: 63px 0 77px 0;
+}
+.tarifs h4,
+.wish h4,
+.app h4,
+.comments h4{
+    font-size: 30px;
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.tarifs h3,
+.wish h3,
+.app h3,
+.comments h3{
+    font-size: 45px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+}
+.price,
+.price2{
+    height: 424px;
+    width: 373px;
+    background: transparent;
+    padding: 105px 25px 0 25px;
+    margin-top: 135px;
+    transition: 0.5s;
+    text-align: center;
+}
+.price h5,
+.price2 h5{
+    color: #000;
+    font-size: 33px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+}
+.price p,
+.price2 p{
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+            
+}
+.price h1,
+.price2 h1{
+    color: #ffc61a;
+    font-weight: 900;
+    font-size: 57px;
+    margin: 0;
+    transition: 0.5s;
+}
+.price button,
+.price2 button,
+.wish button{
+    height: 48px;
+    width: 166px;
+    background: #ffc61a;
+    outline: none;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: bebas-neue, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 25px;
+}
+.price img,
+.price2 img{
+    position: absolute;
+    top: 50px;
+    left: 44px;
+}
+
+.price2 .like{
+    width: 74px;
+    height: 74px;
+    background: url('../images/star-bg_03.png')no-repeat;
+    position: absolute;
+    color: #ffc61a;
+    bottom: 0;
+    right: -7px;
+    font-size: 25px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.price2 .like .fa{
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 38px;
+}
+
+.price2:hover button,
+.price:hover button{
+    background: #000;
+    color: #fff
+}
+.price:hover,
+.price2:hover{
+    background: #ffc61a;
+}
+.price:hover h1,
+.price2:hover h1{
+    color: #000;
+}
+.price2:hover .like{
+    opacity: 1;
+}
+.wish{
+    background: url('../images/m-bg_02.jpg')no-repeat;
+    width: 100%;
+    height: 753px;
+}
+.wish h4{
+    margin-top: 75px;
+
+}
+.wish h3{
+    color: #fff;
+}
+.wish .sircle{
+    height: 81px;
+    width: 81px;
+    border-radius: 50%;
+    background: #ffc61a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 35px;
+    margin-top: 5px;
+}
+.wish h5{
+    color: #ffc61a;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.wish p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+.wish .square1{
+    margin-top: 100px;
+}
+.wish .square2{
+    margin-top: 80px;
+}
+.wish button:hover{
+    background: #fff;
+    color: #000;
+}
+.app h4{
+    margin-top: 50px;
+    font-size: 35px;
+
+}
+.app h3{
+    margin: 0;
+}
+.app{
+    width: 100%;
+    height: 650px;
+    background: #fff;
+    position: relative;
+}
+.app h5{
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 80px;
+    color: #000;
+}
+.app p{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 21px;
+    margin-bottom: 60px;
+    color: #000;
+}
+.hand{
+    width: 385px;
+    height: 464px;
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+
+}
+.app .dawnload a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.app .dawnload a:last-child{
+    margin-right: 0;
+}
+.dawnload{
+    width: 440px;
+    height: 65px;
+    display: inline-block;
+}
+.comments{
+    background: url('../images/clients_02.jpg')no-repeat;
+    background-size: cover;
+    height: 611px;
+    width: 100%;
+}
+.comments h3{
+    color: #fff;
+}
+.comments h4{
+    margin-top: 110px;
+}
+.comment{
+    width: 100%;
+    height: 232px;
+    background: #040707;
+    border-radius: 46px;
+    padding: 30px 50px;
+    position: relative;
+    margin-top: 80px;
+}
+
+.comment p{
+    color: #fff;
+    font-size: 17px;
+}
+.comment h5{
+    color: #ffc61a;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.comment h6{
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.comment .arrow{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 106px;
+    bottom: -28px;
+    background: url('../images/comment-bottom2_03.png')no-repeat;
+}
+.comment .arrow1{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 106px;
+    bottom: -28px;
+    background: url('../images/comments-bottom_03.png')no-repeat;
+}
+.number{
+    width: 100%;
+    height: 286px;
+    background: #ffc61a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.number h2,
+.number h1{
+    font-weight: 900;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.number h1{
+    font-size: 70px;
+    margin: 0;
+}
+.book .top{
+    width: 100%;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #171717;
+}
+.book .top p{
+    color:#fff;
+    font-weight: 900;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.book .top p span{
+    color: #ffc61a;
+}
+.book input,
+.book input.vehicle{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-bottom: #e4e4e4 3px solid;
+    outline: none;
+    color: #000;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.book input.vehicle{
+    width: 100%;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #000;
+    font-weight: 600;
+   } 
+   input[type="text"]::-moz-placeholder {
+    color: #000;
+    font-weight: 600;
+   }
+   .book .book-btn{
+       width: 100%;
+       margin: 0;
+       margin-top: 15px;
+   }
+   .book .book-btn:hover{
+       background: #ffc61a;
+       color: #000;
+   }
+footer{
+    height: 492px;
+    width: 100%;
+    background: url('../images/f-bg_02.jpg')no-repeat;
+    background-size: cover;
+}
+footer h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: 38px;
+    font-size: 30px;
+}
+.line{
+    width: 100%;
+    height: 8px;
+    background: #ffc61a;
+    margin-bottom: 46px;
+}
+footer p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+footer a{
+    color: #ffc61a;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.4s
+}
+footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.android .fa,
+.apple .fa{
+    color: #fff;
+    margin-left: 5px;
+    font-size: 20px;
+
+}
+.apple .fa{
+    margin-left: 45px;
+}
+footer .con{
+    font-size: 12px;
+}
+footer .con .fa{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.dawnload{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
