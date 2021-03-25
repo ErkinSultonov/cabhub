@@ -8,6 +8,24 @@ header{
     background-size: cover;
     padding-top: 40px;
 }
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 150px 20px 150px;
+    z-index: 200;
+}
+nav.scrolled{
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 150px 10px 150px;
+}
 .logo h2{
     font-weight: 900;
     color: #ffffff;
@@ -23,26 +41,21 @@ header{
     color: #fff;
     margin-top: -15px;
 }
-.links{
-    width: 96px;
-    height: 34px;
-    background: #ffffff00;
-    border-radius: 15px;
-    display: inline-block;
-    margin-right: 5px;
-    transition: 0.4s;
-}
 .link{
-    width: 100%;
-    height: 100%;
+    margin-right: 10px;
 }
-.links:hover{
+.link:last-child{
+    margin: 0;
+}
+.links{
+    display: flex;align-items: center;
+    justify-content: center;
+}
+.link:hover a{
+    color: #000;
     background: #ffc61a;
 }
-.links:hover a{
-    color: #000;
-}
-.links a{
+.link a{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -53,15 +66,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: 0.4s;
 }
-.links:last-child{
+.link a:last-child{
     margin-right: 0;
 }
 header h1{
     font-weight: 900;
     color: #fff;
     font-size: 70px;
-    margin-top: 90px;
+    margin-top: 150px;
     margin-bottom: 0;
 }
 header h5{
@@ -71,7 +88,7 @@ header h5{
     
 }
 .book{
-    height: 760px;
+    padding: 50px 0;
     background: #ffc61a;
     width: 100%;
     position: relative;
@@ -126,11 +143,13 @@ header h5{
     position: absolute;
     top: -365px;
     z-index: 33;
-    left: 175px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 .book .booking{
     width: 100%;
-    height: 472px;
+    padding: 0 0 30px 0;
     background: #fff;
     margin-top: 210px;
     -webkit-box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
@@ -164,13 +183,13 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
 }
 .price,
 .price2{
-    height: 424px;
-    width: 373px;
-    background: transparent;
-    padding: 105px 25px 0 25px;
+    width: 100%;
+    background: #fff;
+    padding: 105px 25px 25px 25px;
     margin-top: 135px;
     transition: 0.5s;
     text-align: center;
+    position: relative;
 }
 .price h5,
 .price2 h5{
@@ -218,8 +237,8 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
 .price img,
 .price2 img{
     position: absolute;
-    top: 50px;
-    left: 44px;
+    top: -100px;
+    left: 15px;
 }
 
 .price2 .like{
@@ -229,7 +248,7 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
     position: absolute;
     color: #ffc61a;
     bottom: 0;
-    right: -7px;
+    right: 0;
     font-size: 25px;
     opacity: 0;
     transition: 0.5s;
@@ -258,7 +277,7 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
     opacity: 1;
 }
 .wish{
-    background: url('../images/m-bg_02.jpg')no-repeat;
+    background: url('../images/m-bg_02.jpg');
     width: 100%;
     height: 753px;
 }
@@ -330,8 +349,6 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
     color: #000;
 }
 .hand{
-    width: 385px;
-    height: 464px;
     position: absolute;
     right: 80px;
     bottom: 0;
@@ -345,14 +362,12 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
     margin-right: 0;
 }
 .dawnload{
-    width: 440px;
-    height: 65px;
     display: inline-block;
 }
 .comments{
     background: url('../images/clients_02.jpg')no-repeat;
     background-size: cover;
-    height: 611px;
+    padding: 40px 0 100px 0;
     width: 100%;
 }
 .comments h3{
@@ -363,7 +378,6 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
 }
 .comment{
     width: 100%;
-    height: 232px;
     background: #040707;
     border-radius: 46px;
     padding: 30px 50px;
@@ -448,7 +462,7 @@ box-shadow: 0px 0px 39px 2px rgba(0,0,0,0.4);
 }
 .book input,
 .book input.vehicle{
-    width: 120px;
+    width: 100%;
     height: 40px;
     border: none;
     border-bottom: #e4e4e4 3px solid;
@@ -478,7 +492,7 @@ input[type="text"]::-webkit-input-placeholder {
        color: #000;
    }
 footer{
-    height: 492px;
+    padding: 50px 0;
     width: 100%;
     background: url('../images/f-bg_02.jpg')no-repeat;
     background-size: cover;
@@ -487,7 +501,7 @@ footer h3{
     text-transform: uppercase;
     color: #fff;
     font-weight: 900;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 38px;
     font-size: 30px;
 }
@@ -533,4 +547,7 @@ footer .con .fa{
 .dawnload{
     animation-iteration-count: infinite;
     animation-duration: 2s;
+}
+.bars{
+    display: none;
 }

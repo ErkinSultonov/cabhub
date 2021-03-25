@@ -6,58 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CabHub</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/jkf0xzh.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-    <header>
-      <nav>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
-              <div class="logo">
-                <h2>Cab<span>Hub</span></h2>
-                <p>call and relax</p>
-              </div>
+<nav>
+    <div class="logo">
+      <h2>Cab<span>Hub</span></h2>
+      <p>call and relax</p>
+    </div>
+      <div class="links">
+          <div class="link">
+              <a href="#home">home</a>
             </div>
-              <div class="col-xl-7 offset-xl-3 col-lg-9 offset-lg-1 col-md-12 offset-md-0 col-sm-12">
-                <div class="link">
-                    <div class="links">
-                        <a href="">home</a>
-                      </div>
-                      <div class="links">
-                          <a href="">about</a>
-                        </div>
-                        <div class="links">
-                            <a href="">features</a>
-                          </div>
-                          <div class="links">
-                              <a href="">blog</a>
-                            </div>
-                            <div class="links">
-                                <a href="">order now</a>
-                              </div>
-                              <div class="links">
-                                  <a href="">contacts</a>
-                                </div>
+            <div class="link">
+                <a href="#booking">booking</a>
+              </div>
+              <div class="link">
+                  <a href="#tarifs">tarifs</a>
                 </div>
+                <div class="link">
+                    <a href="#features">features</a>
+                  </div>
+                  <div class="link">
+                      <a href="#app">Application</a>
+                    </div>
+                    <div class="link">
+                        <a href="#testimonals">testimonals</a>
+                      </div>
+      </div>
+      <button class="bars">
+        <i class="fa fa-bars" aria-hidden="true"></i>
 
-              </div>
-              <div class="col-xl-12 text-center">
-                <h1>+123 4567 8900</h1>
-                <h5>w w w. p s d. i n. u a</h5>
-              </div>
-            </div>
+      </button>
+</nav>
+    <header id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 text-center">
+            <h1>+123 4567 8900</h1>
+            <h5>w w w. p s d. i n. u a</h5>
           </div>
-        
-      </nav>
+        </div>
+      </div>
     </header>
-    <section class="book">
+    <section id="booking" class="book">
       <div class="container">
         <div class="row">
             <div class="col-xl-12 wow bounceInLeft">
@@ -81,34 +80,37 @@
               <div class="top">
                 <p>book a <span>cab</span></p>
               </div>
-              <div class="row">
-                <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1">
-                    <input type="text" placeholder="Name">
+              <div class="bottom">
+                <div class="row">
+                  <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1 col-12">
+                      <input type="text" placeholder="Name">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12" >
+                      <input type="text" placeholder="Phone">
+                  </div>
+                  <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1 col-12">
+                      <input type="text" placeholder="When">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                      <input type="text" placeholder="Time">
+                  </div>
+                  <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1 col-12">
+                      <input type="text" placeholder="Start">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-12">
+                      <input type="text" placeholder="End">
+                  </div>
+                  <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
+                    <input type="text" placeholder="Choose Vehicle" class="vehicle">
+                  </div>
+                  <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
+                    <button class="book-btn">submit</button>
+  
+                  </div>
+  
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5" >
-                    <input type="text" placeholder="Phone">
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1">
-                    <input type="text" placeholder="When">
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
-                    <input type="text" placeholder="Time">
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1 col-5 offset-1">
-                    <input type="text" placeholder="Start">
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
-                    <input type="text" placeholder="End">
-                </div>
-                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1">
-                  <input type="text" placeholder="Choose Vehicle" class="vehicle">
-                </div>
-                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1">
-                  <button class="book-btn">submit</button>
-
-                </div>
-
               </div>
+              
 
             </div>
 
@@ -116,14 +118,14 @@
         </div>
       </div>
     </section>
-    <section class="tarifs">
+    <section id="tarifs" class="tarifs">
       <div class="container">
         <div class="row">
           <div class="col-xl-12 text-center">
               <h4>our</h4>
               <h3>tarifs</h3>
           </div>
-                <div class="col-xl-4  col-lg-5 offset-lg-1 offset-xl-0 col-md-8 offset-md-2 col-12 offset-sm-0 wow fadeInDown" data-wow-delay="0.3s">
+                <div class="col-xl-4  col-lg-4 offset-lg-0 offset-xl-0 col-md-6 offset-md-0 col-12 offset-sm-0 wow fadeInDown" data-wow-delay="0.3s">
                   
                     <div class="price">
                         <img src="images/p-car_03.png" alt="">
@@ -134,48 +136,49 @@
                     </div>
                 </div>
 
-                    <div class="col-xl-4 col-lg-5 offset-xl-0 col-md-8 offset-md-2 col-12 offset-sm-0 offset-lg-0 wow fadeInDown" data-wow-delay="0.5s">
-                    <div class="price2">
-                        <img src="images/p-car_03.png" alt="">
-                      <h5>standart Class</h5>
-                    <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
-                    <h1>$1,5/mi</h1>
-                    <button>read more</button>
-                    
-                    <div class="like">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                  </div>
+                <div class="col-xl-4 col-lg-4 offset-lg-0 offset-xl-0 col-md-6 offset-md-0 col-12 offset-sm-0 offset-lg-0 wow fadeInDown" data-wow-delay="0.5s">
+                <div class="price2">
+                    <img src="images/p-car_03.png" alt="">
+                  <h5>standart Class</h5>
+                <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+                <h1>$1,5/mi</h1>
+                <button>read more</button>
+                
+                <div class="like">
+                    <i class="fa fa-star" aria-hidden="true"></i>
                 </div>
-                    <div class="col-xl-4 col-lg-6 offset-lg-3 offset-xl-0 col-md-8 offset-md-2 col-12 offset-sm-0 wow fadeInDown" data-wow-delay="0.7s">
-                    <div class="price">
-                        <img src="images/p-car_03.png" class="img3" alt="">
-                      <h5>business Class</h5>
-                    <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
-                    <h1>$1,5/mi</h1>
-                    <button>read more</button>
-                    </div>
-                    </div>
+              </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 offset-lg-0 offset-xl-0 col-md-6 offset-md-3 col-12 offset-sm-0 wow fadeInDown" data-wow-delay="0.7s">
+                <div class="price">
+                    <img src="images/p-car_03.png" class="img3" alt="">
+                  <h5>business Class</h5>
+                <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
+                <h1>$1,5/mi</h1>
+                <button>read more</button>
+                </div>
+                </div>
           
             </div>
           </div>
     </section>
-    <section class="wish">
+    <section id="features" class="wish">
       <div class="container">
         <div class="row">
             <div class="col-xl-12 text-center">
                 <h4>we do best</h4>
                 <h3>then you wish</h3>
             </div>
-            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6  offset-md-0 col-sm-10 offset-sm-1 col-11  offset-1 wow fadeInLeft">
+            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6  offset-md-0 col-sm-10 offset-sm-1 col-12 wow fadeInLeft">
               <div class="square1">
                   <div class="row">
-                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-2">
+                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                         <div class="sircle">
                             <i class="fa fa-star" aria-hidden="true"></i>
                         </div>
                       </div>
-                      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-8">
+                      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
                         <h5>home pickup</h5>
                         <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
                       </div>
@@ -185,15 +188,15 @@
 
 
 
-            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-11 offset-1 wow fadeInRight">
+            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-12 wow fadeInRight">
                 <div class="square1">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-2">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                           <div class="sircle">
                               <i class="fa fa-hourglass-end" aria-hidden="true"></i>
                           </div>
                         </div>
-                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-8">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
                           <h5>fast booking</h5>
                           <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
                         </div>
@@ -203,15 +206,15 @@
 
 
 
-              <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-11 offset-1 wow fadeInLeft">
+              <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-12 wow fadeInLeft">
                   <div class="square2">
                       <div class="row">
-                          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-2">
+                          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                             <div class="sircle">
                                 <i class="fab fa-fort-awesome"></i>
                             </div>
                           </div>
-                          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-8">
+                          <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
                             <h5>bonuses for ride</h5>
                             <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
                           </div>
@@ -222,15 +225,15 @@
 
 
 
-                <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-11 offset-1 wow fadeInRight">
+                <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-10 offset-sm-1 col-12 wow fadeInRight">
                     <div class="square2">
                         <div class="row">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-2">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                               <div class="sircle">
                                   <i class="fa fa-cog" aria-hidden="true"></i>
                               </div>
                             </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-8">
+                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
                               <h5>gps searching</h5>
                               <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
                             </div>
@@ -249,7 +252,7 @@
       </div>
     </section>
 
-    <section class="app">
+    <section id="app" class="app">
       <div class="container">
         <div class="row">
             <div class="col-xl-12 text-center">
@@ -273,13 +276,14 @@
                       
                   
             </div>
-            <div class="hand">
-              <img src="images/hand2_03.png" alt="">
-            </div>
+              <div class="hand">
+                <img src="images/hand2_03.png" alt="">
+              </div>
+            
         </div>
       </div>
     </section>
-    <section class="comments">
+    <section id="testimonals" class="comments">
       <div class="container">
         <div class="row">
           <div class="col-xl-12 text-center">
@@ -290,10 +294,10 @@
             <div class="comment">
               <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur. Quisque sollicitudin feugiat risus.</p>
               <div class="row">
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-3 col-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-3 col-12">
                     <img src="images/comments_03.png" alt="">
                 </div>
-                <div class="col-xl-10 col-lg-9 col-md-8 col-sm-9 col-10">
+                <div class="col-xl-10 col-lg-9 col-md-8 col-sm-9 col-12">
                   <h5>john doe</h5>
                   <h6>business men</h6>
                 </div>
@@ -307,10 +311,10 @@
               <div class="comment">
                 <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur. Quisque sollicitudin feugiat risus.</p>
                 <div class="row">
-                  <div class="col-xl-2 col-lg-3 col-md-4 col-sm-3 col-2">
+                  <div class="col-xl-2 col-lg-3 col-md-4 col-sm-3 col-12">
                       <img src="images/comments_03.png" alt="">
                   </div>
-                  <div class="col-xl-10 col-lg-9 col-md-8 col-sm-9 col-10">
+                  <div class="col-xl-10 col-lg-9 col-md-8 col-sm-9 col-12">
                     <h5>john doe</h5>
                     <h6>business men</h6>
                   </div>
@@ -337,7 +341,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-10 offset-1 offset-sm-0">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10 offset-1 offset-sm-0">
             <h3>about cab hub</h3>
             <div class="line"></div>
             <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.</p>
@@ -348,7 +352,7 @@
               <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
             
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-10 offset-1 offset-sm-0">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10 offset-1 offset-sm-0">
               <h3>download</h3>
               <div class="line"></div>
               <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, </p>
@@ -359,7 +363,7 @@
                 
               
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-10 offset-1 offset-sm-0 ">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 offset-sm-3 offset-md-0 offset-xl-0 offset-lg-0 col-10 offset-1 ">
               <h3>contact</h3>
               <div class="line"></div>
               <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, </p>
@@ -429,11 +433,12 @@
 
 
 <script src="js/wow.min.js"></script>    
-<script src="js/jquery_3.2.1.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.js"></script>
 <script>
   new WOW().init();
 </script>
+<script src="js/main.js"></script>
 </body>
 </html>
